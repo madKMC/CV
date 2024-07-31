@@ -38,11 +38,19 @@
 }
 
 .bg-primary {
-  background-color: #011f4b !important;
+  background-color: #012341 !important;
 }
 
 .bg-secondary {
-  background-color: #03396c !important;
+  background-color: #012f56 !important;
+}
+
+.bg-info {
+  background-color: #e4f3ff !important;
+}
+
+.bg-footer {
+  background-color: #00172b !important;
 }
 
 .text-white {
@@ -54,3 +62,24 @@
   height: auto; /* Maintain aspect ratio */
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.min-vh-100 {
+  min-height: 100vh !important;
+}
+
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}

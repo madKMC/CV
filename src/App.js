@@ -1,10 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import {Container, Row, Col, Card, Accordion, Carousel, Image} from 'react-bootstrap';
+import {Container, Row, Col, Card, Accordion, Carousel, ListGroup, Nav, Button} from 'react-bootstrap';
 import profileImage from './images/profile.jpg';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
+    <div className="d-flex flex-column min-vh-100">
     <Container fluid>
       <Row>
         <Col xs={12} md={2} className="bg-primary text-white">
@@ -22,10 +24,10 @@ function App() {
         </Col>
         <Col xs={12} md={10} className="bg-secondary text-white">
           <h1>About:</h1>
-          <Accordion defaultActiveKey="0" alwaysOpen>
+          <Accordion defaultActiveKey={['0','1']} alwaysOpen>
             <Accordion.Item eventKey="0">
-              <Accordion.Header>Work Experience</Accordion.Header>
-              <Accordion.Body>
+              <Accordion.Header><strong>Work Experience</strong></Accordion.Header>
+              <Accordion.Body className="bg-info">
                 <Card>
                   <Card.Body>
                     <Card.Title>Estoril Books Cresta</Card.Title>
@@ -39,8 +41,8 @@ function App() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header>Education</Accordion.Header>
-              <Accordion.Body>
+              <Accordion.Header><strong>Education</strong></Accordion.Header>
+              <Accordion.Body className="bg-info">
                 <Card>
                   <Card.Body>
                     <Card.Title>North-West University</Card.Title>
@@ -73,8 +75,8 @@ function App() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
-              <Accordion.Header>Skills</Accordion.Header>
-              <Accordion.Body>
+              <Accordion.Header><strong>Skills</strong></Accordion.Header>
+              <Accordion.Body className="bg-info">
                 <Carousel fade>
                   <Carousel.Item>
                     <img
@@ -118,7 +120,69 @@ function App() {
           <br />
         </Col>
       </Row>
+      <Row className="bg-footer">
+        {/* <Col xs={12} md={4} className="text-white">
+          <br/>
+          <ListGroup data-bs-theme="dark">
+            <ListGroup.Item>
+              <strong>Name:</strong><br/>
+              Kaylen Morgan Cairns
+            </ListGroup.Item>
+            <ListGroup.Item variant="dark">
+              <strong>Contact Information:</strong><br/>
+              Email: kaylencairns@gmail.com<br/>
+              Phone: +27 84 323 7032
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <strong>Location:</strong><br/>
+              South Africa<br/>
+              Gauteng<br/>
+              Johannesburg<br/>
+            </ListGroup.Item>
+          </ListGroup>
+          <br/>
+        </Col>
+        <Col xs={12} md={4} className="text-white">
+        <br/>
+          <ListGroup data-bs-theme="dark">
+            <ListGroup.Item>
+              <h1>Links:</h1>
+            </ListGroup.Item>
+            <ListGroup.Item variant="dark">
+              <strong>GitHub:</strong><br/>
+              <Nav>
+                <Nav.Link href="https://github.com/madKMC" target="_blank">
+                  GitHub Profile
+                </Nav.Link>
+              </Nav>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <strong>LinkedIn</strong><br/>
+              <Nav>
+                <Nav.Link href="www.linkedin.com/in/kaylen-cairns-411b8b307" target="_blank">
+                  LinkedIn Profile
+                </Nav.Link>
+              </Nav>
+            </ListGroup.Item>
+          </ListGroup>
+          <br/>
+        </Col>
+        <Col xs={12} md={4} className="text-white">
+          <br/>
+          <ListGroup data-bs-theme="dark">
+            <ListGroup.Item>
+              <h1>Projects:</h1>
+              <Button variant="outline-primary">
+                View my projects
+              </Button>
+            </ListGroup.Item>
+          </ListGroup>
+          <br/>
+        </Col> */}
+      </Row>
     </Container>
+    <Footer />
+    </div>
   );
 }
 
