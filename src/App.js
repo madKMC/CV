@@ -9,7 +9,7 @@ function App() {
         <Col xs={12} md={2} className="bg-primary text-white">
           <br />
           <Card fluid>
-            <Card.Img variant="top" src="../public/KaylenImage.jpg" className="img-fluid" roundedCircle/>
+            <Card.Img variant="top" src="/KaylenImage.jpg" className="img-fluid" roundedCircle/>
             <Card.Body>
               <Card.Title>Kaylen Cairns</Card.Title>
               <Card.Text>
