@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Offcanvas, Card, Placeholder} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import comingSoonImage from '../images/ComingSoon.jpg';
 
 const OffcanvasLink = () => {
@@ -10,7 +11,7 @@ const OffcanvasLink = () => {
 
   return (
     <>
-      <a href="#" onClick={handleShow} style={{ textDecoration: 'none' }}>Open Offcanvas</a>
+      <a href="#" onClick={handleShow} style={{ textDecoration: 'none' }}>Open Projects</a>
 
       <Offcanvas show={show} onHide={handleClose} data-bs-theme="dark">
         <Offcanvas.Header closeButton>

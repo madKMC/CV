@@ -9,6 +9,7 @@ function DownloadButton() {
       variant="primary"
       href={cvPDF}
       target="_blank"
+      className="w-100"
     >
       Download CV
     </Button>
