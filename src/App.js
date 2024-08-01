@@ -13,7 +13,7 @@ function App() {
     <div className="d-flex flex-column min-vh-100">
       <Container fluid>
         <Row>
-          <Col xs={12} md={2} className="bg-primary text-white">
+          <Col xs={12} lg={3} className="bg-primary text-white">
             <br />
             {/* Calling a script to show a profile image and description */}
               <ProfileCard />
@@ -22,7 +22,7 @@ function App() {
               <DownloadButton/>
             <br />
           </Col>
-          <Col xs={12} md={10} className="bg-secondary text-white">
+          <Col xs={12} lg={9} className="bg-secondary text-white">
             <h1>About:</h1>
             <Accordion defaultActiveKey={['0','1']} alwaysOpen>
               <Accordion.Item eventKey="0">
