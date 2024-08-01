@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Offcanvas, Card, Placeholder} from 'react-bootstrap';
+import comingSoonImage from '../images/ComingSoon.jpg';
 
 const OffcanvasLink = () => {
   const [show, setShow] = useState(false);
@@ -9,7 +10,7 @@ const OffcanvasLink = () => {
 
   return (
     <>
-      <a href="#" onClick={handleShow}>Open Offcanvas</a>
+      <a href="#" onClick={handleShow} style={{ textDecoration: 'none' }}>Open Offcanvas</a>
 
       <Offcanvas show={show} onHide={handleClose} data-bs-theme="dark">
         <Offcanvas.Header closeButton>
@@ -17,10 +18,24 @@ const OffcanvasLink = () => {
         </Offcanvas.Header>
         <Offcanvas.Body>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src={comingSoonImage} />
                 <Card.Body>
                     <Placeholder as={Card.Title} animation="glow">
-                    <Placeholder xs={6} />
+                    Coming Soon
+                    </Placeholder>
+                    <Placeholder as={Card.Text} animation="glow">
+                    <Placeholder xs={7} /> <Placeholder xs={4} /> <Placeholder xs={4} />{' '}
+                    <Placeholder xs={6} /> <Placeholder xs={8} />
+                    </Placeholder>
+                    <Placeholder.Button variant="primary" xs={6} />
+                </Card.Body>
+            </Card>
+            <br/>
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={comingSoonImage} />
+                <Card.Body>
+                    <Placeholder as={Card.Title} animation="glow">
+                    Coming Soon
                     </Placeholder>
                     <Placeholder as={Card.Text} animation="glow">
                     <Placeholder xs={7} /> <Placeholder xs={4} /> <Placeholder xs={4} />{' '}

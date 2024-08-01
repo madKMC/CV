@@ -62,12 +62,6 @@
   height: auto; /* Maintain aspect ratio */
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .d-flex {
   display: flex !important;
 }
