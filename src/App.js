@@ -24,7 +24,7 @@ function App() {
           </Col>
           <Col xs={12} lg={9} className="bg-secondary text-white">
             <h1>About:</h1>
-            <Accordion defaultActiveKey={['0','1']} alwaysOpen>
+            <Accordion alwaysOpen>
               <Accordion.Item eventKey="0">
                 <Accordion.Header><strong>Work Experience</strong></Accordion.Header>
                 <Accordion.Body className="bg-info">

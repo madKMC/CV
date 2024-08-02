@@ -19,7 +19,7 @@ const OnlineLinksList = () => {
             <ListGroup.Item>
               <strong>LinkedIn</strong><br/>
               <Nav>
-                <Nav.Link href="www.linkedin.com/in/kaylen-cairns-411b8b307" target="_blank">
+                <Nav.Link href="https://www.linkedin.com/in/kaylen-cairns-411b8b307" target="_blank">
                   LinkedIn Profile
                 </Nav.Link>
               </Nav>
