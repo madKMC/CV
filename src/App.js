@@ -52,7 +52,7 @@ function App() {
 									<SkillCards />
 								</Accordion.Body>
 							</Accordion.Item>
-							<Accordion.Item eventKey='2'>
+							<Accordion.Item eventKey='3'>
 								<Accordion.Header>
 									<strong>Additional Skills</strong>
 								</Accordion.Header>
