@@ -15,7 +15,7 @@ const SkillCards = () => {
 				<Card.Body>
 					<Card.Title>C#</Card.Title>
 					<Card.Text>
-						I can make user of C# to create basic applications.
+						I can make use of C# to create basic applications.
 					</Card.Text>
 				</Card.Body>
 			</Card>
