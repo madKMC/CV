@@ -1,79 +1,79 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .bg-primary {
-  background-color: #012341 !important;
+	background-color: #012341 !important;
 }
 
 .bg-secondary {
-  background-color: #012f56 !important;
+	background-color: #012f56 !important;
 }
 
 .bg-info {
-  background-color: #e4f3ff !important;
+	background-color: #e4f3ff !important;
 }
 
 .bg-footer {
-  background-color: #00172b !important;
+	background-color: #00172b !important;
 }
 
 .text-white {
-  color: white !important;
+	color: white !important;
 }
 
 .img-fluid {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
+	width: 100%;
+	height: auto; /* Maintain aspect ratio */
 }
 
 .d-flex {
-  display: flex !important;
+	display: flex !important;
 }
 
 .flex-column {
-  flex-direction: column !important;
+	flex-direction: column !important;
 }
 
 .min-vh-100 {
-  min-height: 100vh !important;
+	min-height: 100vh !important;
 }
 
 .flex-grow-1 {
-  flex-grow: 1 !important;
+	flex-grow: 1 !important;
 }

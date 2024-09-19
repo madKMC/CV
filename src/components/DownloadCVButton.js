@@ -4,16 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import cvPDF from '../pdf/KaylenCairnsCV.pdf';
 
 function DownloadButton() {
-  return (
-    <Button
-      variant="primary"
-      href={cvPDF}
-      target="_blank"
-      className="w-100"
-    >
-      Download CV
-    </Button>
-  );
+	return (
+		<Button variant='primary' href={cvPDF} target='_blank' className='w-100'>
+			Download CV
+		</Button>
+	);
 }
 
 export default DownloadButton;
