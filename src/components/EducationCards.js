@@ -1,41 +1,38 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const EducationCards = () => {
-    return (
-        <div className="text-center">
-            <Card>
-                <Card.Body>
-                <Card.Title>North-West University</Card.Title>
-                <Card.Text>
-                    Bachelor of Science in Information Technology <br />
-                    2021-2024 <br />
-                </Card.Text>
-                </Card.Body>
-            </Card>
-            <Card>
-                <Card.Body>
-                <Card.Title>Udemy</Card.Title>
-                <Card.Text>
-                    100 Days of Code - The Complete Python Pro Bootcamp <br />
-                    Dr. Angela Yu <br />
-                    2024
-                </Card.Text>
-                </Card.Body>
-            </Card>
-            <Card>
-                <Card.Body>
-                <Card.Title>Udemy</Card.Title>
-                <Card.Text>
-                    Modern React with Redux <br />
-                    Stephen Grider <br />
-                    2024
-                </Card.Text>
-                </Card.Body>
-            </Card>
-        </div>
-    )
-}
+	const SkillsNWU = [
+		'Structured Programming',
+		'Systems Analysis and Design',
+		'Advanced Databases',
+		'Apps and Advanced User Interface Programming',
+		'IT Developments',
+		'Operating Systems',
+		'Computer Networks',
+		'Object Orientated Programming',
+	];
+
+	return (
+		<div>
+			<Card>
+				<Card.Body>
+					<Card.Title>North-West University</Card.Title>
+					<Card.Text>
+						Bachelor of Science in Information Technology <br />
+						2021-2024 <br /> <br />
+						<h6>Skills acquired:</h6>
+						<ListGroup variant='flush'>
+							{SkillsNWU.map((SkillsNWU, index) => (
+								<ListGroupItem key={index}>{SkillsNWU}</ListGroupItem>
+							))}
+						</ListGroup>
+					</Card.Text>
+				</Card.Body>
+			</Card>
+		</div>
+	);
+};
 
 export default EducationCards;
