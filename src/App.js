@@ -55,7 +55,7 @@ function App() {
 							</Accordion.Item>
 							<Accordion.Item eventKey='2'>
 								<Accordion.Header>
-									<strong>Additional Skills</strong>
+									<strong>Skills</strong>
 								</Accordion.Header>
 								<Accordion.Body className='bg-info'>
 									{/* Calls for cards that show the skills possessed */}
