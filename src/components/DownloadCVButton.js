@@ -19,3 +19,4 @@ function DownloadButton() {
 export default DownloadButton;
 
 //Opens the CV pdf in a new tab.
+

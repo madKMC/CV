@@ -52,3 +52,4 @@ const Footer = () => {
 export default Footer;
 
 //Creates a footer for the website that contains three columns.
+
