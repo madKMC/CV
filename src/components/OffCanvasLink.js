@@ -11,42 +11,74 @@ const OffcanvasLink = () => {
 
 	return (
 		<>
-			<a href='#' onClick={handleShow} style={{ textDecoration: 'none' }}>
+			<a
+				href='#'
+				onClick={handleShow}
+				style={{ textDecoration: 'none' }}
+			>
 				Open Projects
 			</a>
 
-			<Offcanvas show={show} onHide={handleClose} data-bs-theme='dark'>
+			<Offcanvas
+				show={show}
+				onHide={handleClose}
+				data-bs-theme='dark'
+			>
 				<Offcanvas.Header closeButton>
 					<Offcanvas.Title>Projects:</Offcanvas.Title>
 				</Offcanvas.Header>
 				<Offcanvas.Body>
 					<Card style={{ width: '18rem' }}>
-						<Card.Img variant='top' src={comingSoonImage} />
+						<Card.Img
+							variant='top'
+							src={comingSoonImage}
+						/>
 						<Card.Body>
-							<Placeholder as={Card.Title} animation='glow'>
+							<Placeholder
+								as={Card.Title}
+								animation='glow'
+							>
 								Coming Soon
 							</Placeholder>
-							<Placeholder as={Card.Text} animation='glow'>
+							<Placeholder
+								as={Card.Text}
+								animation='glow'
+							>
 								<Placeholder xs={7} /> <Placeholder xs={4} />{' '}
 								<Placeholder xs={4} /> <Placeholder xs={6} />{' '}
 								<Placeholder xs={8} />
 							</Placeholder>
-							<Placeholder.Button variant='primary' xs={6} />
+							<Placeholder.Button
+								variant='primary'
+								xs={6}
+							/>
 						</Card.Body>
 					</Card>
 					<br />
 					<Card style={{ width: '18rem' }}>
-						<Card.Img variant='top' src={comingSoonImage} />
+						<Card.Img
+							variant='top'
+							src={comingSoonImage}
+						/>
 						<Card.Body>
-							<Placeholder as={Card.Title} animation='glow'>
+							<Placeholder
+								as={Card.Title}
+								animation='glow'
+							>
 								Coming Soon
 							</Placeholder>
-							<Placeholder as={Card.Text} animation='glow'>
+							<Placeholder
+								as={Card.Text}
+								animation='glow'
+							>
 								<Placeholder xs={7} /> <Placeholder xs={4} />{' '}
 								<Placeholder xs={4} /> <Placeholder xs={6} />{' '}
 								<Placeholder xs={8} />
 							</Placeholder>
-							<Placeholder.Button variant='primary' xs={6} />
+							<Placeholder.Button
+								variant='primary'
+								xs={6}
+							/>
 						</Card.Body>
 					</Card>
 				</Offcanvas.Body>

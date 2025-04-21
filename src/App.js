@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Container, Row, Col, Accordion, AccordionBody } from 'react-bootstrap';
+import { Container, Row, Col, Accordion } from 'react-bootstrap';
 import Footer from './components/Footer.js';
 import DownloadButton from './components/DownloadCVButton.js';
 import ProfileCard from './components/ProfileCard.js';
@@ -13,7 +13,11 @@ function App() {
 		<div className='d-flex flex-column min-vh-100'>
 			<Container fluid>
 				<Row>
-					<Col xs={12} lg={3} className='bg-primary text-white'>
+					<Col
+						xs={12}
+						lg={3}
+						className='bg-primary text-white'
+					>
 						<br />
 						{/* Calling a script to show a profile image and description */}
 						<ProfileCard />
@@ -22,9 +26,15 @@ function App() {
 						<DownloadButton />
 						<br />
 					</Col>
-					<Col xs={12} lg={9} className='bg-secondary text-white'>
+					<Col
+						xs={12}
+						lg={9}
+						className='bg-secondary text-white'
+					>
 						<h1>About:</h1>
-						<Accordion alwaysOpen>
+						<Accordion
+							defaultActiveKey={['0']}
+						>
 							<Accordion.Item eventKey='0'>
 								<Accordion.Header>
 									<strong>Work Experience</strong>
@@ -51,14 +61,6 @@ function App() {
 									{/* Calls for cards that show the skills possessed */}
 									<SkillCards />
 								</Accordion.Body>
-							</Accordion.Item>
-							<Accordion.Item eventKey='3'>
-								<Accordion.Header>
-									<strong>Additional Skills</strong>
-								</Accordion.Header>
-								<AccordionBody>
-									'Valid South-African drivers license.'
-								</AccordionBody>
 							</Accordion.Item>
 						</Accordion>
 						<br />

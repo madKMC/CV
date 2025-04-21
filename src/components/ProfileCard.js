@@ -7,15 +7,17 @@ import profileImageMobile from '../images/mobileProfile.jpg';
 const ProfileCard = () => {
 	return (
 		<Card fluid>
-			<picture>
-				<source media='(max-width: 767px)' srcSet={profileImageMobile} />
-				<source media='(min-width: 768px)' srcSet={profileImage} />
-				<Card.Img variant='top' className='img-fluid' roundedCircle />
-			</picture>
+			<Card.Img
+				variant='top'
+				src={profileImage}
+				className='img-fluid'
+				roundedCircle
+			/>
 			<Card.Body>
 				<Card.Title>Kaylen Cairns</Card.Title>
 				<Card.Text>
-					Aspiring Software Developer | BSc IT Student at NWU
+					Aspiring software engineer. I hope to expand my experience in the IT
+					industry.
 				</Card.Text>
 			</Card.Body>
 		</Card>

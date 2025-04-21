@@ -1,63 +1,58 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const SkillCards = () => {
+	const SkillsLanguages = [
+		'React',
+		'HTML, CSS, JavaScript',
+		'Python',
+		'C#',
+		'Java',
+	];
+	const SkillsBackend = [
+		'NodeJS with ExpressJS',
+		'SQL (Oracle)',
+		'NoSQL (MongoDB)',
+		'API testing (Postman)',
+	];
+	const Skills = ['Agile', 'Git', 'Git Merge Conflict Resolution'];
+
 	return (
-		<div className='text-center'>
+		<div>
 			<Card>
 				<Card.Body>
-					<Card.Title>Database Design</Card.Title>
-					<Card.Text>I can create well-structured database schemas.</Card.Text>
-				</Card.Body>
-			</Card>
-			<Card>
-				<Card.Body>
-					<Card.Title>C#</Card.Title>
+					<Card.Title>Programming Languages</Card.Title>
 					<Card.Text>
-						I can make use of C# to create basic applications.
+						<ListGroup variant='flush'>
+							{SkillsLanguages.map((SkillsLanguages, index) => (
+								<ListGroupItem key={index}>{SkillsLanguages}</ListGroupItem>
+							))}
+						</ListGroup>
 					</Card.Text>
 				</Card.Body>
 			</Card>
 			<Card>
 				<Card.Body>
-					<Card.Title>Python</Card.Title>
+					<Card.Title>Backend and Database</Card.Title>
 					<Card.Text>
-						I have a basic understanding of python as a programming language.
+						<ListGroup variant='flush'>
+							{SkillsBackend.map((SkillsBackend, index) => (
+								<ListGroupItem key={index}>{SkillsBackend}</ListGroupItem>
+							))}
+						</ListGroup>
 					</Card.Text>
 				</Card.Body>
 			</Card>
 			<Card>
 				<Card.Body>
-					<Card.Title>React</Card.Title>
+					<Card.Title>Other</Card.Title>
 					<Card.Text>
-						I use React to create user interfaces with a focus on a seamless
-						user experiences.
-					</Card.Text>
-				</Card.Body>
-			</Card>
-			<Card>
-				<Card.Body>
-					<Card.Title>HTML, CSS and JavaScript</Card.Title>
-					<Card.Text>
-						I create responsive web applications using HTML, CSS, and
-						JavaScript.
-					</Card.Text>
-				</Card.Body>
-			</Card>
-			<Card>
-				<Card.Body>
-					<Card.Title>Agile</Card.Title>
-					<Card.Text>
-						I have a basic understanding of Agile methodologies.
-					</Card.Text>
-				</Card.Body>
-			</Card>
-			<Card>
-				<Card.Body>
-					<Card.Title>Git</Card.Title>
-					<Card.Text>
-						I can make use of Git for version control and collaboration.
+						<ListGroup variant='flush'>
+							{Skills.map((Skills, index) => (
+								<ListGroupItem key={index}>{Skills}</ListGroupItem>
+							))}
+						</ListGroup>
 					</Card.Text>
 				</Card.Body>
 			</Card>

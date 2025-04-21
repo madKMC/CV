@@ -5,7 +5,12 @@ import cvPDF from '../pdf/KaylenCairnsCV.pdf';
 
 function DownloadButton() {
 	return (
-		<Button variant='primary' href={cvPDF} target='_blank' className='w-100'>
+		<Button
+			variant='primary'
+			href={cvPDF}
+			target='_blank'
+			className='w-100'
+		>
 			Download CV
 		</Button>
 	);
@@ -14,3 +19,4 @@ function DownloadButton() {
 export default DownloadButton;
 
 //Opens the CV pdf in a new tab.
+
