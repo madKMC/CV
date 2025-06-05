@@ -40,13 +40,23 @@ const OffcanvasLink = () => {
 								Timer for studying or working, based on the Pomodoro Technique.
 								<br />
 								Using React, Typescript and TailwindCSS.
+								<br />
+								Assistance from bolt.new
 							</Placeholder>
-							<Button variant='primary' xs={6} href='https://frabjous-hummingbird-0ae044.netlify.app'>
+							<Button
+								variant='primary'
+								xs={6}
+								href='https://frabjous-hummingbird-0ae044.netlify.app'
+							>
 								Live Demo
 							</Button>
 							<br />
 							<br />
-							<Button variant='primary' xs={6} href='https://frabjous-hummingbird-0ae044.netlify.app'>
+							<Button
+								variant='primary'
+								xs={6}
+								href='https://frabjous-hummingbird-0ae044.netlify.app'
+							>
 								Github Repo
 							</Button>
 						</Card.Body>
