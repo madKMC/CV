@@ -29,6 +29,8 @@ jobs:
         run: |
           npm run build
 
+      - name: Check build folder
+        run: ls -la ./build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
