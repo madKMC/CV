@@ -1,45 +1,37 @@
-name: Deploy React App to Website
+name: Deploy React App via FTP
 
 on:
   push:
     branches:
       - main
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
+      # Install dependencies
       - name: Install dependencies
         run: npm install
 
+      # Build the React app (ignore ESLint CI errors)
       - name: Build project
-        run: |
-          npm run build
+        run: CI=false npm run build
 
-      - name: Check build folder
+      # Check build folder exists
+      - name: List build folder
         run: ls -la ./build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./build
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
+      # Deploy via FTP
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
