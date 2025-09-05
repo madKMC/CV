@@ -9,7 +9,7 @@ function DownloadButton() {
 			variant='primary'
 			href={cvPDF}
 			target='_blank'
-			className='w-100'
+			className='w-100 download-cv-button'
 		>
 			Download CV
 		</Button>
@@ -19,4 +19,3 @@ function DownloadButton() {
 export default DownloadButton;
 
 //Opens the CV pdf in a new tab.
-

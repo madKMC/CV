@@ -32,11 +32,10 @@ function App() {
 						lg={3}
 						className='bg-primary text-white order-2 order-lg-1'
 					>
-						<br />
 						<ProfileCard />
-						<br />
-						<DownloadButton />
-						<br />
+						<div className='d-flex justify-content-center'>
+							<DownloadButton />
+						</div>
 					</Col>
 					<Col
 						xs={12}
