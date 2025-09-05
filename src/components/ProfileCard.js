@@ -6,12 +6,7 @@ import profileImage from '../images/profile.jpg';
 const ProfileCard = () => {
 	return (
 		<Card fluid>
-			<Card.Img
-				variant='top'
-				src={profileImage}
-				className='img-fluid'
-				roundedCircle
-			/>
+			<Card.Img variant='top' src={profileImage} />
 			<Card.Body>
 				<Card.Title>Kaylen Cairns</Card.Title>
 				<Card.Text>

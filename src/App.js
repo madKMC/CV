@@ -1,68 +1,92 @@
+import React, { useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Container, Row, Col, Accordion } from 'react-bootstrap';
-import Footer from './components/Footer.js';
-import DownloadButton from './components/DownloadCVButton.js';
-import ProfileCard from './components/ProfileCard.js';
-import EducationCards from './components/EducationCards.js';
-import WorkExperienceCards from './components/WorkExperienceCards.js';
-import SkillCards from './components/SkillCards.js';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import DownloadButton from './components/DownloadCVButton';
+import ProfileCard from './components/ProfileCard';
+import EducationCards from './components/EducationCards';
+import WorkExperienceCards from './components/WorkExperienceCards';
+import Projects from './components/Projects';
 
 function App() {
+	const accordionRef = useRef(null);
+
+	const scrollToAccordion = () => {
+		if (accordionRef.current) {
+			accordionRef.current.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+			});
+		}
+	};
+
 	return (
 		<div className='d-flex flex-column min-vh-100'>
+			<Header />
 			<Container fluid>
 				<Row>
 					<Col
 						xs={12}
 						lg={3}
-						className='bg-primary text-white'
+						className='bg-primary text-white order-2 order-lg-1'
 					>
 						<br />
-						{/* Calling a script to show a profile image and description */}
 						<ProfileCard />
 						<br />
-						{/* Calling a script of a button that would call a button to download a pdf of my cv */}
 						<DownloadButton />
 						<br />
 					</Col>
 					<Col
 						xs={12}
 						lg={9}
-						className='bg-secondary text-white'
+						className='bg-secondary text-white order-1 order-lg-2'
 					>
 						<h1>About:</h1>
-						<Accordion
-							defaultActiveKey={['0']}
-						>
-							<Accordion.Item eventKey='0'>
-								<Accordion.Header>
-									<strong>Work Experience</strong>
-								</Accordion.Header>
-								<Accordion.Body className='bg-info'>
-									{/* Calls a script to show cards containing information of work experience */}
-									<WorkExperienceCards />
-								</Accordion.Body>
-							</Accordion.Item>
-							<Accordion.Item eventKey='1'>
-								<Accordion.Header>
-									<strong>Education</strong>
-								</Accordion.Header>
-								<Accordion.Body className='bg-info'>
-									{/* Calls a script to show cards containing information of education */}
-									<EducationCards />
-								</Accordion.Body>
-							</Accordion.Item>
-							<Accordion.Item eventKey='2'>
-								<Accordion.Header>
-									<strong>Skills</strong>
-								</Accordion.Header>
-								<Accordion.Body className='bg-info'>
-									{/* Calls for cards that show the skills possessed */}
-									<SkillCards />
-								</Accordion.Body>
-							</Accordion.Item>
-						</Accordion>
+						<div ref={accordionRef}>
+							<Accordion
+								defaultActiveKey={null}
+								flush
+								className='rounded border'
+							>
+								<Accordion.Item eventKey='0'>
+									<Accordion.Header>
+										<strong>Work Experience</strong>
+									</Accordion.Header>
+									<Accordion.Body
+										className='bg-info'
+										onEntered={scrollToAccordion}
+									>
+										<WorkExperienceCards />
+									</Accordion.Body>
+								</Accordion.Item>
+
+								<Accordion.Item eventKey='1'>
+									<Accordion.Header>
+										<strong>Education</strong>
+									</Accordion.Header>
+									<Accordion.Body
+										className='bg-info'
+										onEntered={scrollToAccordion}
+									>
+										<EducationCards />
+									</Accordion.Body>
+								</Accordion.Item>
+
+								<Accordion.Item eventKey='2'>
+									<Accordion.Header>
+										<strong>Projects</strong>
+									</Accordion.Header>
+									<Accordion.Body
+										className='bg-info'
+										onEntered={scrollToAccordion}
+									>
+										<Projects />
+									</Accordion.Body>
+								</Accordion.Item>
+							</Accordion>
+						</div>
 						<br />
 					</Col>
 				</Row>
