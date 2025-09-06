@@ -12,10 +12,7 @@ const OnlineLinksList = () => {
 				<strong>GitHub:</strong>
 				<br />
 				<Nav>
-					<Nav.Link
-						href='https://github.com/madKMC'
-						target='_blank'
-					>
+					<Nav.Link href='https://github.com/madKMC' target='_blank'>
 						GitHub Profile
 					</Nav.Link>
 				</Nav>

@@ -11,7 +11,7 @@ const SkillCards = () => {
 					<Card.Title>Project Portfolio</Card.Title>
 					<Card.Text>
 						Project portfolio website built with React and Tailwind CSS to
-						showcase my projects and skills.
+						showcase my projects and skills
 					</Card.Text>
 					<Button
 						as='a'

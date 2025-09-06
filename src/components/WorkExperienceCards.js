@@ -4,20 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const WorkExperienceCards = () => {
 	const EstorilSkills = [
-		'Interpersonal skills.',
-		'Conflict resolution.',
-		'Inventory control.',
-		'Merchandising.',
-		'Working under pressure (Peak times and holidays).',
-        'Teamwork'
+		'Interpersonal skills',
+		'Conflict resolution',
+		'Inventory control',
+		'Merchandising',
+		'Working under pressure (Peak times and holidays)',
+		'Teamwork',
 	];
 	const FreeLanceSkills = [
-		'React.',
-		'Tailwind.',
-		'Vite.',
-		'MySQL.',
-		'Node.js.',
-		'Express.js.'
+		"Psychologist's Booking System - A booking system for a psychologist to manage appointments and allow for further reach in clients. Built with Vite, React, Javascript, Tailwindcss and using the Google Calendar API.",
 	];
 
 	return (
@@ -43,7 +38,7 @@ const WorkExperienceCards = () => {
 					<Card.Title>Free Lancing</Card.Title>
 					<Card.Text>
 						Mar 2025 - Current <br /> <br />
-						<h6>Skills acquired:</h6>
+						<h6>Projects worked on:</h6>
 						<ListGroup variant='flush'>
 							{FreeLanceSkills.map((FreeLanceSkills, index) => (
 								<ListGroupItem key={index}>{FreeLanceSkills}</ListGroupItem>
