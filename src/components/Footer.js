@@ -9,7 +9,7 @@ const Footer = () => {
 	return (
 		<footer className='bg-dark text-white mt-auto py-3'>
 			<Container>
-				<Row>
+				<Row className='justify-content-center'>
 					<Col xs={12} md={4} className='text-white'>
 						<br />
 						<ContactInfoList />
@@ -28,4 +28,4 @@ const Footer = () => {
 
 export default Footer;
 
-//Creates a footer for the website that contains three columns.
+//Creates a footer for the website that contains two columns.
