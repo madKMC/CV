@@ -11,7 +11,7 @@ const ProfileCard = () => {
 			<Card.Body>
 				<Card.Title>Kaylen Cairns</Card.Title>
 				<Card.Text>
-					Software Engineer. Aspiring Full-Stack Developer. Passionate about creating efficient and scalable web applications.
+					Software Engineer. Passionate about creating efficient and scalable web applications.
 				</Card.Text>
 			</Card.Body>
 		</Card>
