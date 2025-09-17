@@ -1,14 +1,15 @@
 import React from 'react';
 import { ListGroup, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css';
 
 const OnlineLinksList = () => {
 	return (
-		<ListGroup data-bs-theme='dark'>
-			<ListGroup.Item>
+		<ListGroup>
+			<ListGroup.Item className='bg-listgroup-odd text-white'>
 				<h1>Links:</h1>
 			</ListGroup.Item>
-			<ListGroup.Item variant='dark'>
+			<ListGroup.Item className='bg-listgroup-even text-white'>
 				<strong>GitHub:</strong>
 				<br />
 				<Nav>
@@ -17,7 +18,7 @@ const OnlineLinksList = () => {
 					</Nav.Link>
 				</Nav>
 			</ListGroup.Item>
-			<ListGroup.Item>
+			<ListGroup.Item className='bg-listgroup-odd text-white'>
 				<strong>LinkedIn</strong>
 				<br />
 				<Nav>

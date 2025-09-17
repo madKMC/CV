@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import OffCanvasLink from './OffCanvasLink.js';
 import ContactInfoList from './ContactInfoList.js';
 import OnlineLinksList from './OnlineLinksList.js';
+import '../App.css';
 
 const Footer = () => {
 	return (
-		<footer className='bg-dark text-white mt-auto py-3'>
+		<footer className='bg-footer text-white mt-auto py-3'>
 			<Container>
 				<Row className='justify-content-center'>
 					<Col xs={12} md={4} className='text-white'>
@@ -27,5 +27,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-//Creates a footer for the website that contains two columns.

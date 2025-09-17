@@ -19,6 +19,20 @@ const WorkExperienceCards = () => {
 		<div>
 			<Card>
 				<Card.Body>
+					<Card.Title>Free Lancing</Card.Title>
+					<Card.Text>
+						Mar 2025 - Current <br /> <br />
+						<h6>Projects worked on:</h6>
+						<ListGroup variant='flush'>
+							{FreeLanceSkills.map((FreeLanceSkills, index) => (
+								<ListGroupItem key={index}>{FreeLanceSkills}</ListGroupItem>
+							))}
+						</ListGroup>
+					</Card.Text>
+				</Card.Body>
+			</Card>
+			<Card>
+				<Card.Body>
 					<Card.Title>Estoril Books Cresta</Card.Title>
 					<Card.Text>
 						Johannesburg - South Africa <br />
@@ -28,20 +42,6 @@ const WorkExperienceCards = () => {
 						<ListGroup variant='flush'>
 							{EstorilSkills.map((EstorilSkills, index) => (
 								<ListGroupItem key={index}>{EstorilSkills}</ListGroupItem>
-							))}
-						</ListGroup>
-					</Card.Text>
-				</Card.Body>
-			</Card>
-			<Card>
-				<Card.Body>
-					<Card.Title>Free Lancing</Card.Title>
-					<Card.Text>
-						Mar 2025 - Current <br /> <br />
-						<h6>Projects worked on:</h6>
-						<ListGroup variant='flush'>
-							{FreeLanceSkills.map((FreeLanceSkills, index) => (
-								<ListGroupItem key={index}>{FreeLanceSkills}</ListGroupItem>
 							))}
 						</ListGroup>
 					</Card.Text>

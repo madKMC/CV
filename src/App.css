@@ -1,3 +1,7 @@
+:root {
+	color-scheme: light dark;
+}
+
 .App {
 	text-align: center;
 }
@@ -14,7 +18,7 @@
 }
 
 .App-header {
-	background-color: #282c34 !important;
+	background-color: light-dark(#fefeff, #282c34) !important;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -38,28 +42,44 @@
 }
 
 .bg-primary {
-	background-color: #012341 !important;
+	background-color: light-dark(#ffffff, #012341) !important;
 }
 
 .bg-secondary {
-	background-color: #012f56 !important;
+	background-color: light-dark(#f9fafb, #012f56) !important;
 }
 
 .bg-info {
-	background-color: #e4f3ff !important;
+	background-color: light-dark(#e2eafc, #e4f3ff) !important;
+}
+
+.bg-header {
+	background-color: light-dark(#e2eafd, rgb(33, 37, 41)) !important;
 }
 
 .bg-footer {
-	background-color: #00172b !important;
+	background-color: light-dark(#ffffff, rgb(33, 37, 41)) !important;
+	border-top: 1px solid light-dark(#e5e7eb, #43484d) !important;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.bg-listgroup-odd {
+	background-color: light-dark(#f3f4f6, #212529) !important;
+	border: 1px solid light-dark(#cbd5e1, #43484d) !important;
+}
+
+.bg-listgroup-even {
+	background-color: light-dark(#e5e7eb, #1a1d20) !important;
+	border: 1px solid light-dark(#cbd5e1, #43484d) !important;
 }
 
 .text-white {
-	color: white !important;
+	color: light-dark(black, rgb(231, 231, 231)) !important;
 }
 
 .img-fluid {
 	width: 100%;
-	height: auto; /* Maintain aspect ratio */
+	height: auto;
 }
 
 .d-flex {
@@ -79,6 +99,9 @@
 }
 
 .profile-card {
+	background-color: light-dark(#ffffff, #bbc7d1) !important;
+	border: 1px solid light-dark(#cbd5e1, #43484d) !important;
+	border-radius: 0.5rem;
 	width: 100%;
 	max-width: 360px;
 	margin: 0 auto;
@@ -86,6 +109,12 @@
 }
 
 .download-cv-button {
+	background-color: light-dark(#c6d4f7, #015eb1) !important;
+	color: light-dark(#012341, #ffffff) !important;
+	border: 1px solid light-dark(#b7c4e6, #012341) !important;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 	width: 100%;
 	max-width: 360px;
 	margin: 0 auto;
