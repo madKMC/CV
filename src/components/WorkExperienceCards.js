@@ -14,14 +14,33 @@ const WorkExperienceCards = () => {
 	const FreeLanceSkills = [
 		"Psychologist's Booking System - A booking system for a psychologist to manage appointments and allow for further reach in clients. Built with Vite, React, Javascript, Tailwindcss and using the Google Calendar API.",
 	];
+	const RuneworkzProjects = [
+		'Authentication System - A system that allows users to register and login to the website. Built with React, Node.js, Express and MySQL. Implemented JWT for authentication, password hashing, role based access control, and added google login options.',
+		'CICD Pipeline - Implemented a CI/CD pipeline using GitHub Actions to automate the deployment process. This allowed for faster and more efficient development cycles.',
+	];
 
 	return (
 		<div>
 			<Card>
 				<Card.Body>
+					<Card.Title>Runeworkz</Card.Title>
+					<Card.Text>
+						Jan 2026 - Current <br />
+						Worked as a Junior Developer. <br /> <br />
+						<h6>Skills acquired:</h6>
+						<ListGroup variant='flush'>
+							{RuneworkzProjects.map((project, index) => (
+								<ListGroupItem key={index}>{project}</ListGroupItem>
+							))}
+						</ListGroup>
+					</Card.Text>
+				</Card.Body>
+			</Card>
+			<Card>
+				<Card.Body>
 					<Card.Title>Free Lancing</Card.Title>
 					<Card.Text>
-						Mar 2025 - Current <br /> <br />
+						Mar 2025 - Jan 2026 <br /> <br />
 						<h6>Projects worked on:</h6>
 						<ListGroup variant='flush'>
 							{FreeLanceSkills.map((FreeLanceSkills, index) => (
